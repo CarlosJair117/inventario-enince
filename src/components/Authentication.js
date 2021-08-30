@@ -17,7 +17,7 @@ const Authentication = () => {
 
     return (
             <div className="row" style={{height: "44rem"}}>
-                <div className="col azul d-flex align-items-center" >
+                <div className="col fondoImagen d-flex align-items-center" >
                     <img src={logo} alt="img" className="centrador"  style={{width:"70%",}}/>
                 </div>
                 <div className="col d-flex align-items-center">

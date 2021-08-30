@@ -17,6 +17,11 @@ code {
   background-color: #2AA8DC;
 }
 
+.fondoImagen{
+  background-image: url(./assets/img/empresa.jpg);
+  background-size: 100% 100%;
+}
+
 .centrador{
   margin-left: auto;
   margin-right: auto;
