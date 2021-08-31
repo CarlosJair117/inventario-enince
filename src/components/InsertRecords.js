@@ -69,15 +69,15 @@ const InsertRecords = () => {
             <form onSubmit={handleSubmit}>
                 <div className="mb-3 mt-4">
                     <label htmlFor="insertRecordsPruduct" className="form-label">Producto</label>
-                    <input type="text" className="form-control" name="product" id="insertRecordsPruduct" placeholder="Nombre de producto" onChange={handleChange} value={form.product}/>
+                    <input type="text" className="form-control" name="product" id="insertRecordsPruduct" placeholder="Nombre de producto" onChange={handleChange} value={form.product} required/>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="insertRecordsNumber" className="form-label">Numero de producto</label>
-                    <input type="number" className="form-control" name="number" id="insertRecordsNumber" placeholder="Numero de producto" onChange={handleChange} value={form.number}/>
+                    <input type="number" className="form-control" name="number" id="insertRecordsNumber" placeholder="Numero de producto" onChange={handleChange} value={form.number} required/>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="insertRecordsDescription" className="form-label">Descripcion de producto</label>
-                    <textarea className="form-control" id="insertRecordsDescription" name="description" rows="3" onChange={handleChange} value={form.description}></textarea>
+                    <textarea className="form-control" id="insertRecordsDescription" name="description" rows="3" onChange={handleChange} value={form.description} required></textarea>
                 </div>
                 <div>
                     <input className="btn btn-primary" type="submit" value="Submit"/>

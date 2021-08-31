@@ -88,15 +88,15 @@ const Sales = () => {
             <form onSubmit={handleSubmit}>
                 <div className="mb-3 mt-4">
                     <label htmlFor="salesProduct" className="form-label">Producto</label>
-                    <input type="text" className="form-control" name="salesProduct" id="salesProduct" placeholder="Nombre de producto" onChange={handleChange} value={form.salesProduct}/>
+                    <input type="text" className="form-control" name="salesProduct" id="salesProduct" placeholder="Nombre de producto" onChange={handleChange} value={form.salesProduct} required/>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="salesNumber" className="form-label">Numero de salidas</label>
-                    <input type="number" className="form-control" name="salesNumber" id="salesNumber" placeholder="Numero de salidas" onChange={handleChange} value={form.salesNumber}/>
+                    <input type="number" className="form-control" name="salesNumber" id="salesNumber" placeholder="Numero de salidas" onChange={handleChange} value={form.salesNumber} required/>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="salesDescription" className="form-label">Descripcion de salida</label>
-                    <textarea className="form-control" name="salesDescription" id="salesDescription" rows="3" onChange={handleChange} value={form.salesDescription}></textarea>
+                    <textarea className="form-control" name="salesDescription" id="salesDescription" rows="3" onChange={handleChange} value={form.salesDescription} required></textarea>
                 </div>
                 <div>
                     <input className="btn btn-primary" type="submit" value="Submit"/>

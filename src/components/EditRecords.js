@@ -53,11 +53,11 @@ const EditRecords = () => {
             <form onSubmit={handleSubmit}>
                 <div className="mb-3 mt-4">
                     <label htmlFor="editRecordsPruduct" className="form-label">Producto</label>
-                    <input type="text" className="form-control" name="product" id="editRecordsPruduct" placeholder="Nombre de producto" onChange={handleChange} value={form.product}/>
+                    <input type="text" className="form-control" name="product" id="editRecordsPruduct" placeholder="Nombre de producto" onChange={handleChange} value={form.product} required/>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="EditRecordsDescription" className="form-label">Descripcion de producto</label>
-                    <textarea className="form-control" id="EditRecordsDescription" name="description" rows="3" onChange={handleChange} value={form.description}></textarea>
+                    <textarea className="form-control" id="EditRecordsDescription" name="description" rows="3" onChange={handleChange} value={form.description} required></textarea>
                 </div>
                 <div>
                     <input className="btn btn-primary" type="submit" value="Submit"/>

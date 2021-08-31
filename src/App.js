@@ -1,6 +1,6 @@
 import './App.css';
 import Authentication from './components/Authentication';
-import { BrowserRouter as Router, Route, Switch, } from "react-router-dom"
+import { HashRouter, Route, Switch, } from "react-router-dom"
 import Home from './components/Home';
 import { CrudProvider } from './context/CrudContext';
 import PrivateRoute from './components/PrivateRoute';
@@ -9,12 +9,12 @@ function App() {
   return (
     <div>
       <CrudProvider>
-        <Router>
+        <HashRouter>
           <Switch>
             <Route exact path="/" component={Authentication}/>
             <PrivateRoute path="/home" component={Home}/>
           </Switch>
-        </Router>
+        </HashRouter>
       </CrudProvider>
     </div>
   );
